@@ -1,10 +1,5 @@
 ---
 title: Home
-carousels:
-  - images: 
-    - image: /images/home/carousel/gastronomie_team.jpg
-    - image: /images/home/carousel/labo_photo1.jpg
-    - image: /images/home/carousel/photo.jpg
 ---
 
 
@@ -27,7 +22,7 @@ Laurie is an INSERM researcher and young group leader of the Advanced-T cell the
 {% endcapture %}
 
 {%
-  include feature2.html
+  include feature.html
   image="images/home/laurie_menger.jpeg"
   title="Dr. Laurie Menger"
   component="portrait"
@@ -35,8 +30,7 @@ Laurie is an INSERM researcher and young group leader of the Advanced-T cell the
 %}
 
 {% include section.html full=true %}
-{% include carousel.html height="40" unit="%" duration="10" number="1" %}
-
+{% include banner.html image="images/home/carousel/labo_photo1_cropped.jpg" %}
 
 {% include section.html%}
 # Highlights
