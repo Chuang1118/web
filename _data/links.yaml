@@ -69,7 +69,7 @@ twitter:
   link: https://twitter.com/$LINK
   
 bluesky:
-  icon: fab fa-bluesky
+  icon: Bluesky-Logo.svg
   text: Bluesky
   tooltip: Bluesky
   link: https://bsky.app/$LINK
