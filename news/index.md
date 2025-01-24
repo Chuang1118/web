@@ -10,7 +10,7 @@ nav:
 {% include section.html %}
 
 {%
-  include feature2.html
+  include feature.html
   image="images/Travaux.jpg"
 %}
 
