@@ -1,0 +1,52 @@
+---
+---
+
+@import "palettes";
+@import "theme";
+@import "mixins";
+
+.feature2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //flex-direction: column;
+  gap: 40px;
+  margin: 40px 0;
+  line-height: $spacing;
+  vertical-align: middle;
+  @include trim-v-margins;
+
+  .feature_image {
+    display: inline-block;
+    width: $page * 4;
+    height: var(--width);
+    border-radius: 999px;
+    overflow: hidden;
+    //box-shadow: $shadow;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .feature_text {
+    flex-grow: 1;
+  }
+
+  .feature_title {
+    // color: $dark-accent;
+    font-family: $sans;
+    font-weight: $medium;
+    text-align: center;
+  }
+
+  &[data-flip="true"] {
+    flex-direction: row-reverse;
+  }
+
+  @media (max-width: $tablet) {
+    flex-direction: column !important;
+  }
+}

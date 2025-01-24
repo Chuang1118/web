@@ -1,0 +1,19 @@
+.feature2 { display: flex; justify-content: center; align-items: center; gap: 40px; margin: 40px 0; line-height: 1.5; vertical-align: middle; }
+
+.feature2:first-child { margin-top: 0; }
+
+.feature2:last-child { margin-bottom: 0; }
+
+.feature2 .feature_image { display: inline-block; width: 3600px; height: var(--width); border-radius: 999px; overflow: hidden; }
+
+.feature2 .feature_image img { object-fit: cover; width: 100%; height: 100%; }
+
+.feature2 .feature_text { flex-grow: 1; }
+
+.feature2 .feature_title { font-family: "Poppins", sans-serif; font-weight: 500; text-align: center; }
+
+.feature2[data-flip="true"] { flex-direction: row-reverse; }
+
+@media (max-width: 800px) { .feature2 { flex-direction: column !important; } }
+
+/*# sourceMappingURL=feature2.css.map */
